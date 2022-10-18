@@ -13,6 +13,8 @@ a {
     box-sizing: border-box;
 }
 
+/* MOBILE FIRST */
+
 /* ENCABEZADO */
 .encabezado {
     height: 13vh;
@@ -28,7 +30,7 @@ a {
     font-weight: 600;
     font-size: 5rem;
     padding-top: 10px;
-text-shadow: 1px 1px 10px #003049;
+    text-shadow: 1px 1px 10px #003049;
 }
 
 .lista {
@@ -51,4 +53,85 @@ text-shadow: 1px 1px 10px #003049;
     justify-content: space-between;
     padding-left: 10px;
     padding-right: 10px;
+}
+
+/* PORTADA */
+.portada {
+    height:60vh;
+    background-image: url(/assets/img/zanahorias.jpg);
+    background-size: 150%;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: fixed;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    text-align: center;
+}
+
+.portada__titulo {
+    color: #003049;
+    font-family: Oswald;
+    font-size: 4rem;
+    font-weight: 600;
+    text-shadow: 1px 1px 10px white;
+}
+
+.portada__texto {
+    color: #003049;
+    font-family: oswald;
+    font-size: 2.5rem;
+    font-weight: 400;
+    text-shadow: 2px 2px 10px white;
+}
+
+.color-healthy {
+    color: #D62828;
+}
+
+
+/* VISTA COMPUTADORA */
+
+@media screen and (min-width: 768px) {
+    .encabezado {
+        background-color: #EAE2B7;
+        position: sticky;
+        top: 0px;
+        padding: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+
+    .encabezado__titulo {
+        font-size: 8rem;
+    }
+
+    .lista__item {
+        font-size: 3.5rem;
+    }
+
+    /* PORTADA */
+
+    .portada {
+        height: 60vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        text-align: center;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+    }
+
+    .portada__titulo {
+        font-size: 6rem;
+    }
+
+    .portada__texto {
+        font-size: 4rem;
+    }
 }
