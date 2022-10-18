@@ -57,7 +57,7 @@ a {
 
 /* PORTADA */
 .portada {
-    height:60vh;
+    height:50vh;
     background-image: url(/assets/img/zanahorias.jpg);
     background-size: 150%;
     background-repeat: no-repeat;
@@ -99,7 +99,7 @@ a {
 }
 .footer__titulo {
     font-family: Montserrat;
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: 600;
     color: #D62828;
     padding: 5px;
@@ -108,11 +108,138 @@ a {
 .footer__contacto {
     color: #003049;
     font-family: "oswald";
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 400;
     padding: 1px;
 }
 
+/* MI CUENTA */
+main {
+    height: 45vh;
+}
+
+h2 {
+    color: #F58C1D;
+    font-family: Montserrat;
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-align: left;
+    padding-left: 6%;
+    padding-top: 6%;
+}
+
+h4 {
+    font-family: Montserrat;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #D62828;
+    text-align: center;
+    padding-top: 4%;
+}
+
+.micuenta__parrafo {
+    font-size: 1.5rem;
+    padding: 2%;
+    font-family: "oswald";
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-align: left;
+}
+
+.micuenta__parrafo2 {
+    font-size: 1.5rem;
+    padding: 2%;
+    font-family: "oswald";
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-align: left;
+}
+
+aside {
+    text-align: right;
+    font-family: oswald;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.btn {
+    border: 1px solid #003049;
+    border-radius: 10px;
+    color: white;
+    background-color: #002f4946;
+    padding: 6px 10px;
+    font-family: Montserrat;
+    font-size: 0.8rem;
+}
+
+/* CREAR CUENTA */
+
+.crearcuenta__nombre {
+    padding-top: 10px;
+    font-family: oswald;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #003049;
+    padding-left: 5%;
+}
+
+.crearcuenta__fecha {
+    font-family: oswald;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #003049;
+    padding-left: 5%;
+}
+
+.crearcuenta__sexo {
+    font-family: oswald;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #003049;
+    padding-left: 5%;
+}
+
+.crearcuenta__telefono {
+    font-family: oswald;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #003049;
+    padding-left: 5%;
+}
+
+.crearcuenta__mail {
+    font-family: oswald;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #003049;
+    padding-left: 5%;
+}
+
+.crearcuenta__contraseña {
+    font-family: oswald;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #003049;
+    padding-left: 5%;
+}
+
+.crearcuenta__terminos {
+    font-family: oswald;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #003049;
+    padding-left: 5%;
+    padding-bottom: 5px;
+}
+
+.boton {
+    border: 1px solid #003049;
+    color: #003049;
+    background-color: white;
+    padding: 5px 10px;
+    font-family: Montserrat;
+    font-size: 0.8rem;
+}
 
 /* VISTA COMPUTADORA */
 
@@ -156,5 +283,15 @@ a {
 
     .portada__texto {
         font-size: 4rem;
+    }
+
+    /* FOOTER */
+    .footer {
+        width: 100%;
+        height: 35vh;
+    }
+    .footer__titulo {
+        font-size: 6rem;
+        transform: rotate(135deg);
     }
 }
