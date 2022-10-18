@@ -1,0 +1,24 @@
+ /* PIE DE PAGINA */
+ .footer {
+    background-color: #EAE2B7;
+    background-size: cover;
+    font-family: oswald;
+    height: 100%;
+    width: 100%;
+
+&__titulo {
+    font-family: Montserrat;
+    font-size: 4rem;
+    font-weight: 600;
+    color: #D62828;
+    padding: 5px;
+}
+
+&__contacto {
+    color: #003049;
+    font-family: "oswald";
+    font-size: 2rem;
+    font-weight: 400;
+    padding: 1px;
+}
+}
