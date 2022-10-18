@@ -1,0 +1,54 @@
+html {
+    font-size: 6px;
+}
+
+a {
+    text-decoration: none;
+    color: #003049;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ENCABEZADO */
+.encabezado {
+    height: 13vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #EAE2B7;
+}
+
+.encabezado__titulo {
+    color: #003049;
+    font-family: "Montserrat";
+    font-weight: 600;
+    font-size: 5rem;
+    padding-top: 10px;
+text-shadow: 1px 1px 10px #003049;
+}
+
+.lista {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    padding: 5px;
+    text-shadow: 1px 1px 5px #003049;
+}
+
+.lista__item {
+    font-family: "oswald";
+    color: #003049;
+    font-size: 1.5rem;
+    font-weight: 600;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+}
