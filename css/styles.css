@@ -1,3 +1,137 @@
+@charset "UTF-8";
+html {
+  font-size: 6px;
+}
+
+a {
+  text-decoration: none;
+  color: #003049;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.portada {
+  height: 50vh;
+  background-image: url(/assets/img/zanahorias.jpg);
+  background-size: 150%;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-attachment: fixed;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  text-align: center;
+}
+.portada__titulo {
+  color: #003049;
+  font-family: Oswald;
+  font-size: 4rem;
+  font-weight: 600;
+  text-shadow: 2px 2px 10px white;
+}
+.portada__texto {
+  color: #003049;
+  font-family: oswald;
+  font-size: 2.5rem;
+  font-weight: 400;
+  text-shadow: 2px 2px 10px white;
+}
+.portada .color-healthy {
+  color: #D62828;
+}
+
+@media screen and (min-width: 768px) {
+  .portada {
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    text-align: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  .portada__titulo {
+    font-size: 6rem;
+  }
+  .portada__texto {
+    font-size: 4rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .contenedor {
+    height: 70vh;
+    width: 100vw;
+  }
+  .contenedor.tarjetas {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+  }
+  .tarjetas {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  h2 {
+    color: #F58C1D;
+    font-family: Montserrat;
+    font-size: 5rem;
+    font-weight: 600;
+    text-align: left;
+    padding-left: 2%;
+    padding-top: 2%;
+  }
+  .tarjeta {
+    background-color: #ffffff;
+    border: solid 2px #003049;
+    border-radius: 10%;
+    width: 250px;
+    height: 300px;
+    padding: 10px;
+    margin: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    transition-duration: 2s;
+    box-shadow: 20px 20px 20px 5px;
+  }
+  .tarjeta:hover {
+    transform: rotateY(180deg);
+    background-color: rgba(0, 47, 73, 0.2862745098);
+  }
+  .tarjeta__img {
+    width: 150px;
+    height: 150px;
+    margin: 1px;
+    padding: 1px;
+    border-radius: 10%;
+    object-fit: cover;
+  }
+  .tarjeta__titulo {
+    text-decoration: none;
+    color: #003049;
+    font-size: 3rem;
+    padding: 5px;
+    font-weight: 600;
+    font-family: Montserrat;
+  }
+  .tarjeta__descrip {
+    color: #003049;
+    text-align: center;
+    display: flex;
+    font-family: Montserrat;
+    font-size: 2rem;
+  }
+}
 /* PIE DE PAGINA */
 .footer {
   background-color: #EAE2B7;
@@ -21,6 +155,16 @@
   padding: 1px;
 }
 
+@media screen and (min-width: 768px) {
+  .footer {
+    width: 100%;
+    height: 35vh;
+  }
+  .footer__titulo {
+    font-size: 6rem;
+    transform: rotate(135deg);
+  }
+}
 /* ENCABEZADO */
 .encabezado {
   height: 13vh;
@@ -61,35 +205,223 @@
   padding-right: 10px;
 }
 
-.portada {
-  height: 50vh;
-  background-image: url(/assets/img/zanahorias.jpg);
-  background-size: 150%;
-  background-repeat: no-repeat;
-  background-position: top;
-  background-attachment: fixed;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  text-align: center;
+@media screen and (min-width: 768px) {
+  .encabezado {
+    background-color: #EAE2B7;
+    position: sticky;
+    top: 0px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  .encabezado__titulo {
+    font-size: 8rem;
+  }
+  .lista__item {
+    font-size: 3.5rem;
+  }
 }
-.portada__titulo {
-  color: #003049;
-  font-family: Oswald;
-  font-size: 4rem;
-  font-weight: 600;
-  text-shadow: 2px 2px 10px white;
-}
-.portada__texto {
-  color: #003049;
+.crearcuenta__nombre {
+  padding-top: 10px;
   font-family: oswald;
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   font-weight: 400;
-  text-shadow: 2px 2px 10px white;
+  color: #003049;
+  padding-left: 5%;
 }
-.portada .color-healthy {
+
+.crearcuenta__fecha {
+  font-family: oswald;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #003049;
+  padding-left: 5%;
+}
+
+.crearcuenta__sexo {
+  font-family: oswald;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #003049;
+  padding-left: 5%;
+}
+
+.crearcuenta__telefono {
+  font-family: oswald;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #003049;
+  padding-left: 5%;
+}
+
+.crearcuenta__mail {
+  font-family: oswald;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #003049;
+  padding-left: 5%;
+}
+
+.crearcuenta__contraseña {
+  font-family: oswald;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #003049;
+  padding-left: 5%;
+}
+
+.crearcuenta__terminos {
+  font-family: oswald;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #003049;
+  padding-left: 5%;
+  padding-bottom: 5px;
+}
+
+.boton {
+  border: 1px solid #003049;
+  color: #003049;
+  background-color: white;
+  padding: 5px 10px;
+  font-family: Montserrat;
+  font-size: 0.8rem;
+}
+
+@media screen and (min-width: 768px) {
+  .contenedor__crearcuenta {
+    height: 62vh;
+    width: 100vw;
+  }
+  .crearcuenta {
+    font-size: 5rem;
+    padding-top: 20px;
+  }
+  .crearcuenta__nombre {
+    font-size: 3rem;
+  }
+  .crearcuenta__fecha {
+    font-size: 3rem;
+  }
+  .crearcuenta__sexo {
+    font-size: 3rem;
+  }
+  .crearcuenta__telefono {
+    font-size: 3rem;
+  }
+  .crearcuenta__mail {
+    font-size: 3rem;
+  }
+  .crearcuenta__contraseña {
+    font-size: 3rem;
+  }
+  .crearcuenta__terminos {
+    font-size: 3rem;
+  }
+  .boton {
+    border: 2px solid #003049;
+    color: #003049;
+    background-color: white;
+    padding: 5px 10px;
+    font-family: Montserrat;
+    font-size: 2rem;
+  }
+}
+main {
+  height: 45vh;
+}
+
+h2 {
+  color: #F58C1D;
+  font-family: Montserrat;
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-align: left;
+  padding-left: 6%;
+  padding-top: 6%;
+}
+
+h4 {
+  font-family: Montserrat;
+  font-size: 2rem;
+  font-weight: 600;
   color: #D62828;
+  text-align: center;
+  padding-top: 4%;
+}
+
+.micuenta__parrafo {
+  font-size: 1.5rem;
+  padding: 2%;
+  font-family: "oswald";
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-align: left;
+}
+
+.micuenta__parrafo2 {
+  font-size: 1.5rem;
+  padding: 2%;
+  font-family: "oswald";
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-align: left;
+}
+
+aside {
+  text-align: right;
+  font-family: oswald;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.btn {
+  border: 1px solid #003049;
+  border-radius: 10px;
+  color: white;
+  background-color: rgba(0, 47, 73, 0.2745098039);
+  padding: 6px 10px;
+  font-family: Montserrat;
+  font-size: 0.8rem;
+}
+
+@media screen and (min-width: 768px) {
+  .micuenta__parrafo {
+    font-size: 3.5rem;
+    padding: 5px;
+  }
+  .micuenta__parrafo2 {
+    font-size: 3.5rem;
+    padding: 5px;
+  }
+  .micuenta__titulo {
+    font-size: 5rem;
+    padding: 20px;
+  }
+  .micuenta__subtitulo {
+    font-size: 4rem;
+    padding: 8px;
+    text-align: start;
+  }
+  aside {
+    font-size: 3rem;
+  }
+  .btn {
+    border: 1px solid #003049;
+    border-radius: 10px;
+    color: white;
+    background-color: rgba(0, 47, 73, 0.2745098039);
+    padding: 10px 15px;
+    font-family: Montserrat;
+    font-size: 1.5rem;
+  }
+  .btn:hover {
+    border: 1px solid #003049;
+    background-color: #EAE2B7;
+    color: #003049;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
