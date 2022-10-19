@@ -37,3 +37,24 @@
     padding-left: 10px;
     padding-right: 10px;
 }
+
+@media screen and (min-width: 768px) {
+    .encabezado {
+        background-color: #EAE2B7;
+        position: sticky;
+        top: 0px;
+        padding: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+
+    .encabezado__titulo {
+        font-size: 8rem;
+    }
+
+    .lista__item {
+        font-size: 3.5rem;
+    }
+}

@@ -1,0 +1,115 @@
+.crearcuenta__nombre {
+    padding-top: 10px;
+    font-family: oswald;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #003049;
+    padding-left: 5%;
+}
+
+.crearcuenta__fecha {
+    font-family: oswald;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #003049;
+    padding-left: 5%;
+}
+
+.crearcuenta__sexo {
+    font-family: oswald;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #003049;
+    padding-left: 5%;
+}
+
+.crearcuenta__telefono {
+    font-family: oswald;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #003049;
+    padding-left: 5%;
+}
+
+.crearcuenta__mail {
+    font-family: oswald;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #003049;
+    padding-left: 5%;
+}
+
+.crearcuenta__contraseña {
+    font-family: oswald;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #003049;
+    padding-left: 5%;
+}
+
+.crearcuenta__terminos {
+    font-family: oswald;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #003049;
+    padding-left: 5%;
+    padding-bottom: 5px;
+}
+
+.boton {
+    border: 1px solid #003049;
+    color: #003049;
+    background-color: white;
+    padding: 5px 10px;
+    font-family: Montserrat;
+    font-size: 0.8rem;
+}
+
+@media screen and (min-width: 768px) {
+    .contenedor__crearcuenta {
+        height: 62vh;
+        width: 100vw;
+    }
+
+    .crearcuenta {
+        font-size: 5rem;
+        padding-top: 20px;
+    }
+
+    .crearcuenta__nombre {
+        font-size: 3rem;
+    }
+
+    .crearcuenta__fecha {
+        font-size: 3rem;
+    }
+
+    .crearcuenta__sexo {
+        font-size: 3rem;
+    }
+
+    .crearcuenta__telefono {
+        font-size: 3rem;
+    }
+
+    .crearcuenta__mail {
+        font-size: 3rem;
+    }
+
+    .crearcuenta__contraseña {
+        font-size: 3rem;
+    }
+
+    .crearcuenta__terminos {
+        font-size: 3rem;
+    }
+
+    .boton {
+        border: 2px solid #003049;
+        color: #003049;
+        background-color: white;
+        padding: 5px 10px;
+        font-family: Montserrat;
+        font-size: 2rem;
+    }
+}

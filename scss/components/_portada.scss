@@ -32,3 +32,25 @@
     color: #D62828;
 }
 }
+
+@media screen and (min-width: 768px) {
+    .portada {
+        height: 60vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        text-align: center;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+    }
+
+    .portada__titulo {
+        font-size: 6rem;
+    }
+
+    .portada__texto {
+        font-size: 4rem;
+    }
+}
