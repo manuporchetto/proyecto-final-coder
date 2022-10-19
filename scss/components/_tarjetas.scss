@@ -1,0 +1,78 @@
+@media screen and (min-width: 768px) {
+    .contenedor {
+        height: 70vh;
+        width: 100vw;
+    }
+
+    .contenedor.tarjetas {
+        background-color: white;
+
+        display: flex;
+        flex-direction: row;
+    }
+
+
+    .tarjetas {
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    h2 {
+        color: #F58C1D;
+        font-family: Montserrat;
+        font-size: 5rem;
+        font-weight: 600;
+        text-align: left;
+        padding-left: 2%;
+        padding-top: 2%;
+    }
+
+    .tarjeta {
+        background-color: #ffffff;
+        border: solid 2px #003049;
+        border-radius: 10%;
+        width: 250px;
+        height: 300px;
+        padding: 10px;
+        margin: 20px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        transition-duration: 2s;
+        box-shadow: 20px 20px 20px 5px ;
+    }
+    .tarjeta:hover{
+        transform: rotateY(180deg);
+        background-color: #002f4949;
+    }
+    .tarjeta__img {
+        width: 150px;
+        height: 150px;
+        margin: 1px;
+        padding: 1px;
+        border-radius: 10%;
+        object-fit: cover;
+    }
+
+    .tarjeta__titulo {
+        text-decoration: none;
+        color: #003049;
+        font-size: 3rem;
+        padding: 5px;
+        font-weight: 600;
+        font-family: Montserrat;
+    }
+
+    .tarjeta__descrip {
+        color: #003049;
+        text-align: center;
+        display: flex;
+        font-family: Montserrat;
+        font-size: 2rem;
+    }
+
+}

@@ -10,9 +10,9 @@
     flex-direction: column;
     justify-content: start;
     text-align: center;
-}
 
-.portada__titulo {
+
+&__titulo {
     color: #003049;
     font-family: Oswald;
     font-size: 4rem;
@@ -20,7 +20,7 @@
     text-shadow: 2px 2px 10px white;
 }
 
-.portada__texto {
+&__texto {
     color: #003049;
     font-family: oswald;
     font-size: 2.5rem;
@@ -30,4 +30,5 @@
 
 .color-healthy {
     color: #D62828;
+}
 }
